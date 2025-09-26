@@ -1,0 +1,73 @@
+
+const AboutSectionTwo = () => {
+  return (
+    <section className="py-10 md:py-12 lg:py-16 bg-gray-50 dark:bg-gray-900 ">
+      <div className="container">
+        <div className="-mx-4 flex flex-wrap items-center">
+         
+
+          {/* Right Content Side */}
+          <div className="w-full px-2 lg:w-1/2">
+            <div className="wow fadeInUp max-w-[500px]" data-wow-delay=".2s">
+              <h2 className="mb-6 text-3xl font-bold leading-snug text-black dark:text-white sm:text-4xl">
+                Why <span className="text-primary">Sharvix Innovations</span>?
+              </h2>
+              <p className="mb-10 text-base leading-relaxed text-body-color sm:text-lg">
+                We combine modern engineering with creative problem-solving to
+                deliver digital solutions that are scalable, intelligent, and
+                future-ready. From startups to growing businesses, our focus is
+                always on building technology that truly makes a difference.
+              </p>
+
+             
+            </div>
+          </div>
+           {/* Left Image Side */}
+          <div className="w-full lg:w-1/2">
+             {/* Features Grid */}
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 ">
+                <div className="bg-gray-50 dark:bg-dark p-3 rounded-lg">
+                  <h3 className="mb-3 text-xl font-semibold text-black dark:text-white">
+                    🚀 End-to-End Development
+                  </h3>
+                  <p className="text-base text-body-color">
+                    Full-stack expertise across web & mobile — React, Node.js,
+                    Django, Python, PHP, and more.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="mb-3 text-xl font-semibold text-black dark:text-white">
+                    🤖 AI & Automation
+                  </h3>
+                  <p className="text-base text-body-color">
+                    Smart workflows, AI-driven features, and automation tools
+                    that optimize operations.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="mb-3 text-xl font-semibold text-black dark:text-white">
+                    🎨 Creative & Scalable
+                  </h3>
+                  <p className="text-base text-body-color">
+                    Clean, modern UI/UX paired with strong backend architecture
+                    for long-term growth.
+                  </p>
+                </div>
+                <div className="bg-gray-50 dark:bg-dark p-3 rounded-lg">
+                  <h3 className="mb-3 text-xl font-semibold text-black dark:text-white">
+                    💡 Innovation First
+                  </h3>
+                  <p className="text-base text-body-color">
+                    Exploring emerging technologies to keep your business ahead
+                    in a fast-moving world.
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSectionTwo;

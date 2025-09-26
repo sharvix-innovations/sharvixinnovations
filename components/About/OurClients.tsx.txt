@@ -1,0 +1,45 @@
+import Image from "next/image";
+import { getImagePath } from "@/lib/utils";
+import SectionTitle from "../Common/SectionTitle";
+
+const OurClients = () => {
+  const clients = [
+    { name: "Google", logo: "/images/clients/google.svg" },
+    { name: "Microsoft", logo: "/images/clients/microsoft.svg" },
+    { name: "Amazon", logo: "/images/clients/amazon.svg" },
+    { name: "Netflix", logo: "/images/clients/netflix.svg" },
+    { name: "Facebook", logo: "/images/clients/facebook.svg" },
+    { name: "Spotify", logo: "/images/clients/spotify.svg" },
+  ];
+
+  return (
+    <section className="bg-gray-50 dark:bg-dark py-10 md:py-12 lg:py-16">
+      <div className="container">
+        <SectionTitle
+          title="Trusted by Leading Companies"
+          paragraph="Trusted by global leaders, we craft scalable digital products that inspire growth, innovation, and long-term success."
+          center
+        />
+
+        <div className="grid grid-cols-2 items-center gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+          {clients.map((client, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center rounded-xl bg-white p-4 shadow-md transition duration-300 hover:shadow-lg dark:bg-gray-900"
+            >
+              <Image
+                src={getImagePath(client.logo)}
+                alt={client.name}
+                width={120}
+                height={50}
+                className="object-contain grayscale transition duration-300 hover:grayscale-0"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OurClients;
